@@ -26,8 +26,8 @@ public class ListsUtil {
         ArrayList<String> expectedResult = new ArrayList<>(actualResult);
         expectedResult.sort(order);
 
-        System.out.println(actualResult);
-        System.out.println(expectedResult);
+        System.out.println("Actual result:\n" + actualResult);
+        System.out.println("Expected result:\n" + expectedResult);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -39,8 +39,8 @@ public class ListsUtil {
         ArrayList<Date> expectedResult = new ArrayList<>(actualResult);
         expectedResult.sort(order);
 
-        System.out.println(actualResult);
-        System.out.println(expectedResult);
+        System.out.println("Actual result:\n" + actualResult);
+        System.out.println("Expected result:\n" + expectedResult);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -52,8 +52,8 @@ public class ListsUtil {
         ArrayList<Date> expectedResult = new ArrayList<>(actualResult);
         expectedResult.sort(order);
 
-        System.out.println(actualResult);
-        System.out.println(expectedResult);
+        System.out.println("Actual result:\n" + actualResult);
+        System.out.println("Expected result:\n" + expectedResult);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
@@ -65,8 +65,8 @@ public class ListsUtil {
         ArrayList<String> expectedResult = new ArrayList<>(actualResult);
         expectedResult.sort(order);
 
-        System.out.println(actualResult);
-        System.out.println(expectedResult);
+        System.out.println("Actual result:\n" + actualResult);
+        System.out.println("Expected result:\n" + expectedResult);
 
         Assert.assertEquals(actualResult, expectedResult);
     }
