@@ -76,6 +76,7 @@ public class ListsUtil {
 
         collection.stream()
                 .map(SelenideElement::getText)
+                .filter(s -> s.length() > 1)
                 .forEach(resultList::add);
 
         return resultList;
