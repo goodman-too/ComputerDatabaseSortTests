@@ -14,13 +14,13 @@ public class SortingTests extends BaseTest {
     @Test
     public void checkSortingByNameAsc() {
         mainPage.openPageOrderedByNameAsc();
-        listsUtil.verifySortingByNameCorrectness(Comparator.naturalOrder());
+        listsUtil.verifySortingByNameCorrectness(String.CASE_INSENSITIVE_ORDER);
     }
 
     @Test
     public void checkSortingByNameDesc() {
         mainPage.openPageOrderedByNameDesc();
-        listsUtil.verifySortingByNameCorrectness(Comparator.reverseOrder());
+        listsUtil.verifySortingByNameCorrectness(String.CASE_INSENSITIVE_ORDER.reversed());
     }
 
     @Test
@@ -50,12 +50,12 @@ public class SortingTests extends BaseTest {
     @Test
     public void checkSortingByCompanyAsc() {
         mainPage.openPageOrderedByCompanyAsc();
-        listsUtil.verifySortingByCompanyCorrectness(Comparator.naturalOrder());
+        listsUtil.verifySortingByCompanyCorrectness(String.CASE_INSENSITIVE_ORDER);
     }
 
     @Test
     public void checkSortingByCompanyDesc() {
         mainPage.openPageOrderedByCompanyDesc();
-        listsUtil.verifySortingByCompanyCorrectness(Comparator.reverseOrder());
+        listsUtil.verifySortingByCompanyCorrectness(String.CASE_INSENSITIVE_ORDER.reversed());
     }
 }
